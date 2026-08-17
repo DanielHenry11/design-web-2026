@@ -1,0 +1,14 @@
+$cor-texto : pink;
+$cor-title : pink;
+$cor-background : pink;
+
+body{
+    color: $cor-texto;
+
+    h1{
+        color: $cor-title;
+        &:hover{
+            background-color: $cor-background;
+        }
+    }
+}
