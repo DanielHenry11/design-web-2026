@@ -13,11 +13,16 @@ Projeto didático para ensinar a integração entre **HTML semântico** e **SCSS
 ## Estrutura
 
 projeto/
-├── index.html # Estrutura HTML (acessível e semântica)
+
+├── index.html 
+
 ├── scss/
-│ └── style.scss # Estilos com variáveis, mixins e aninhamento
+
+└── style.scss 
+
 └── css/
-└── style.css # Arquivo gerado pelo SCSS (não edite manualmente)
+
+└── style.css # Arquivo gerado pelo SCSS (não edite jamais ou vai perder tudo para sempre)
 
 
 ## Como usar
