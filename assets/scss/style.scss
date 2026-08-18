@@ -1,22 +1,3 @@
-<<<<<<< HEAD
-$cor-texto: rgb(255, 15, 162);
-$cor-h1: rgb(33, 225, 15);
-$cor-background: rgb(70, 13, 53);
-
-body{
-    color: $cor-texto;
-
-    //body{}
-    //body h1{}
-    //body h1:hover{}
-    h1{
-        color: $cor-h1;
-        &:hover{
-            background-color: $cor-background;
-        }
-    }
-}
-=======
 // =============================================
 //  1. VARIÁVEIS (cores, fontes, breakpoints)
 // importante para configurar todas as variáveis do código no final
