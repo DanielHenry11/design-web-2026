@@ -35,7 +35,3 @@ A partir do código HTML do footer do IFRN (página index.html), você deve adic
 
 - Use o **Cheatsheet** que foi fornecido para consultar rapidamente as classes.
 - Utilize o **Tailwind Play** (https://play.tailwindcss.com/) para testar pequenos trechos.
-- Use bg-green-800 ou bg-[#23472B] para o fundo do footer.
-- Para os links do sitemap, text-white e hover:text-green-300.
-- Para os ícones sociais, use text-2xl e hover:text-green-300.
-- Aproveite o espaçamento gap-* para organizar os elementos.
