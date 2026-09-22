@@ -1,127 +1,139 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="pt-BR" data-theme="light">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Atividade 10 – Seção de Eventos</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://unpkg.com/phosphor-icons@latest/src/css/phosphor.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Pessoal | DaisyUI</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="bg-base-200 text-base-content min-h-screen flex flex-col">
 
-<body>
+  <!-- Navbar / Cabeçalho -->
+  <header class="navbar bg-base-100 shadow-md px-4 md:px-8 sticky top-0 z-50">
+    <div class="flex-1">
+      <a class="btn btn-ghost text-xl font-bold">MeuPortfólio</a>
+    </div>
+    <div class="flex-none gap-2">
+      <a href="#contato" class="btn btn-primary btn-sm">Contato</a>
+    </div>
+  </header>
 
-    <!-- ===========  Eventos  ================= -->
-    <section>
-        <div>
-            <!-- Cabeçalho da seção -->
-            <div>
-                <h2>Eventos</h2>
-                <a href="/eventos/">
-                    Todos os eventos
-                    <span aria-hidden="true"></span>
-                </a>
-                <div>
-                    <p>Conheça todos os eventos - atividades, festivais, congressos, palestras e outros - que englobam
-                        os <i>campi</i> do IFRN em diferentes escalas de alcance social.</p>
-                </div>
-            </div>
-
-            <!-- Grade de cards de eventos -->
-            <div>
-
-                <a href="/eventos/9486/">
-                    <span>Em breve</span>
-                    <span title="Campus"><span aria-hidden="true"></span> Pau dos Ferros</span>
-                    <h3>Vivências em Arte</h3>
-                    <div>
-                        <span>07</span>
-                        <span>dez</span>
-                        <span>2026</span>
-                    </div>
-                </a>
-
-                <a href="/eventos/9595/">
-                    <span>Em breve</span>
-                    <span title="Campus"><span aria-hidden="true"></span> Caicó</span>
-                    <h3>III Feira Seridó Ciência</h3>
-                    <div>
-                        <span>25</span>
-                        <span>nov</span>
-                        <span>2026</span>
-                    </div>
-                </a>
-
-                <a href="/eventos/9783/">
-                    <span>Em breve</span>
-                    <span title="Campus"><span aria-hidden="true"></span> João Câmara</span>
-                    <h3>CPOP 2026 - Competição de Pontes de Palito de Picolé do IFRN João Câmara</h3>
-                    <div>
-                        <span>04</span>
-                        <span>nov</span>
-                        <span>2026</span>
-                    </div>
-                </a>
-
-                <a href="/eventos/9333/">
-                    <span>Em breve</span>
-                    <span title="Campus"><span aria-hidden="true"></span> Reitoria</span>
-                    <h3>III Encontro Anual da Comissão Própria de Avaliação</h3>
-                    <div>
-                        <span>04</span>
-                        <span>nov</span>
-                        <span>2026</span>
-                    </div>
-                </a>
-
-                <a href="/eventos/9739/">
-                    <span>Em andamento</span>
-                    <span title="Campus"><span aria-hidden="true"></span> Pau dos Ferros</span>
-                    <h3>Oficina "Dando cores ao sol"</h3>
-                    <div>
-                        <span>14</span>
-                        <span>set</span>
-                        <span>2026</span>
-                    </div>
-                </a>
-
-                <a href="/eventos/9764/">
-                    <span>Em andamento</span>
-                    <span title="Campus"><span aria-hidden="true"></span> São Gonçalo do Amarante</span>
-                    <h3>IFJURIS: Introdução ao Direito Constitucional</h3>
-                    <div>
-                        <span>14</span>
-                        <span>set</span>
-                        <span>2026</span>
-                    </div>
-                </a>
-
-                <a href="/eventos/9714/">
-                    <span>Em andamento</span>
-                    <span title="Campus"><span aria-hidden="true"></span> Reitoria</span>
-                    <h3>ASTEEAD Conecta: gestão, monitoramento e apoio à EaD no IFRN</h3>
-                    <div>
-                        <span>14</span>
-                        <span>set</span>
-                        <span>2026</span>
-                    </div>
-                </a>
-
-                <a href="/eventos/9711/">
-                    <span>Em andamento</span>
-                    <span title="Campus"><span aria-hidden="true"></span> Currais Novos</span>
-                    <h3>Produção e exposição de Sala Temática: Abelha e Mel.</h3>
-                    <div>
-                        <span>14</span>
-                        <span>set</span>
-                        <span>2026</span>
-                    </div>
-                </a>
-
-            </div>
+  <main class="flex-grow">
+    <!-- Seção 1: Hero -->
+    <section class="hero bg-base-100 py-12 md:py-20 border-b border-base-300">
+      <div class="hero-content text-center">
+        <div class="max-w-md">
+          <h1 class="text-4xl md:text-5xl font-bold">Olá, eu sou Desenvolvedor Web</h1>
+          <p class="py-6 text-base-content/80">
+            Bem-vindo à minha página pessoal. Apresento meus projetos e habilidades estruturados com DaisyUI e Tailwind CSS.
+          </p>
+          <div class="flex justify-center gap-4">
+            <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+            <a href="#sobre" class="btn btn-outline">Saber Mais</a>
+          </div>
         </div>
+      </div>
     </section>
 
-</body>
+    <!-- Seção 2: Apresentação (Badges) -->
+    <section id="sobre" class="max-w-4xl mx-auto px-4 py-12">
+      <h2 class="text-2xl font-bold text-center mb-6">Sobre Mim</h2>
+      <div class="bg-base-100 p-6 md:p-8 rounded-box shadow-sm text-center">
+        <p class="mb-6 leading-relaxed text-base-content/90">
+          Sou estudante de tecnologia e focado no desenvolvimento front-end com interfaces limpas, acessíveis e responsivas.
+        </p>
+        <div class="flex flex-wrap justify-center gap-2">
+          <span class="badge badge-primary">HTML5 & CSS3</span>
+          <span class="badge badge-secondary">Tailwind CSS</span>
+          <span class="badge badge-accent">DaisyUI</span>
+          <span class="badge badge-outline">Git & GitHub</span>
+        </div>
+      </div>
+    </section>
 
+    <!-- Seção 3: Projetos (Cards) -->
+    <section id="projetos" class="max-w-5xl mx-auto px-4 py-12">
+      <h2 class="text-2xl font-bold text-center mb-8">Meus Projetos</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Card 1 -->
+        <div class="card bg-base-100 shadow-md">
+          <div class="card-body">
+            <h3 class="card-title">Landing Page</h3>
+            <p class="text-sm text-base-content/80">
+              Página institucional responsiva com foco em usabilidade.
+            </p>
+            <div class="card-actions justify-end mt-4">
+              <button class="btn btn-primary btn-sm">Detalhes</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card bg-base-100 shadow-md">
+          <div class="card-body">
+            <h3 class="card-title">Painel de Eventos</h3>
+            <p class="text-sm text-base-content/80">
+              Interface para visualização e acompanhamento de cronogramas.
+            </p>
+            <div class="card-actions justify-end mt-4">
+              <button class="btn btn-secondary btn-sm">Detalhes</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card bg-base-100 shadow-md">
+          <div class="card-body">
+            <h3 class="card-title">Componentes Tailwind</h3>
+            <p class="text-sm text-base-content/80">
+              Estudo de componentes utilitários e temas dinâmicos.
+            </p>
+            <div class="card-actions justify-end mt-4">
+              <button class="btn btn-outline btn-sm">Detalhes</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Seção 4: Contato (Alert e Input) -->
+    <section id="contato" class="max-w-md mx-auto px-4 py-12">
+      <h2 class="text-2xl font-bold text-center mb-6">Entre em Contato</h2>
+      
+      <div class="alert alert-info shadow-sm mb-6">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        <span>Envie uma mensagem através do formulário abaixo.</span>
+      </div>
+
+      <form class="bg-base-100 p-6 rounded-box shadow-sm flex flex-col gap-4">
+        <div class="form-control">
+          <label class="label">
+            <span class="label-text">Seu Nome</span>
+          </label>
+          <input type="text" placeholder="Digite seu nome" class="input input-bordered w-full" />
+        </div>
+
+        <div class="form-control">
+          <label class="label">
+            <span class="label-text">Seu E-mail</span>
+          </label>
+          <input type="email" placeholder="seu@email.com" class="input input-bordered w-full" />
+        </div>
+
+        <button type="button" class="btn btn-primary w-full mt-2">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer footer-center p-4 bg-base-100 text-base-content border-t border-base-300">
+    <aside>
+      <p>Desenvolvido com Tailwind CSS e DaisyUI — Módulo 3</p>
+    </aside>
+  </footer>
+
+</body>
 </html>
